@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{9d8c4379-e669-4398-9524-dbafef055a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{6465035c-8590-4787-86d7-005eb1f2b547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{72fd9abb-893e-435e-8c46-cf8e8c5b9195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{b39c1164-7ab5-4eb1-9141-d006088b2363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platforms">
+      <UniqueIdentifier>{2e214e0c-50a6-40ff-b8b2-7506034cdaf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platforms\win">
+      <UniqueIdentifier>{f4290c3e-ca6b-4f03-808f-534bf56b2869}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\core\imp.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\non_copyable.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\net\server.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\net\socket.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\thread\thread_pool.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\servit.h" />
+    <ClInclude Include="..\..\platforms\win\socket_imp.h">
+      <Filter>platforms\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platforms\win\thread_pool_imp.h">
+      <Filter>platforms\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\platforms\win\win.h">
+      <Filter>platforms\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\.clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\platforms\win\socket_imp.cpp">
+      <Filter>platforms\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\platforms\win\thread_pool_imp.cpp">
+      <Filter>platforms\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\servit.cpp" />
+    <ClCompile Include="..\..\platforms\win\win.cpp">
+      <Filter>platforms\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\net\socket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\thread\thread_pool.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

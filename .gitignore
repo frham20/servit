@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/.vs
+/examples/http_server/x64/Debug
+/examples/http_server/http_server.vcxproj.user
+/src/build/win/.vs
+/src/build/win/x64/Debug
+/src/build/win/servit.vcxproj.user
